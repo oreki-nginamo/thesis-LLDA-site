@@ -1,22 +1,24 @@
-.sample-prescription-for1 {
+.moderate-prescription {
     margin: 0;
 }
-.sample-prescription-for-container1 {
-    width: 409px;
+.moderate-container {
+    width: 395px;
     position: absolute;
     margin: 0 !important;
     top: 66px;
-    left: calc(50% - 204px);
+    left: calc(50% - 197px);
     line-height: 150%;
     font-weight: 500;
     display: inline-block;
     z-index: 0;
+    background-color: #fff;
+    border: 2px solid var(--color-black);
 }
 .moderate {
     width: 652px;
     position: relative;
-    background-color: var(--color-white);
-    border: 2px solid var(--color-black);
+    background-color: #fff;
+    border: 2px solid black;
     box-sizing: border-box;
     height: 207px;
     overflow: hidden;
@@ -28,8 +30,8 @@
     max-width: 90%;
     max-height: 90%;
     text-align: center;
-    font-size: var(--body-text-size);
+    font-size: 20px;
     color: var(--color-black);
-    font-family: var(--small-text);
+    font-family: var(--font-inter);
 }
 

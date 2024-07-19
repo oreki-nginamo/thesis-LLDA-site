@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1, width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 	<link rel="stylesheet" href="./global.css" />
@@ -16,13 +16,12 @@
 </head>
 
 <body>
-
 	<!-- header-->
-	<div class="login-page">
+	<header>
 		<div class="header-navigation">
 			<div class="items" id="itemsContainer">
 				<div class="button">
-					<div class="register-here">Register Here</div>
+					<div class="register-here"><a href="register.html" style=" text-decoration:none; color: #FFFFFF;">Register Here</a></div>
 				</div>
 			</div>
 			<img class="updated-logo-v5-no-bilog-1" alt="" src="assets/updated-logo-v-5-no-bilog-10.png">
@@ -32,6 +31,9 @@
 			<img class="bagong-pinas-1" alt="" src="assets/bagong-pinas-10.png">
 
 		</div>
+	</header>
+	
+	<div class="login-page">
 		<!-- body content-->
 		<div class="login-frame">
 			<div class="frame-background">
@@ -39,15 +41,17 @@
 			<div class="forgot-password">Forgot Password?</div>
 			<div class="not-a-user-container" id="notAUser">
 				<span>Not a user yet? </span>
-				<b>Register Here</b>
+				<a href="register.html" style=" text-decoration:none; color: black;">
+					<b>Register Here</b>
+				</a>
 			</div>
 			<div class="login-via">Login Via:</div>
 			<div class="login-here">Login Here</div>
 			<div class="input-fields">
-				<div class="username-input-field">
+				<div class="login-username-input-field">
 					<div class="label">Username</div>
 				</div>
-				<div class="password-input-field">
+				<div class="login-password-input-field">
 					<div class="label">Password</div>
 				</div>
 				<img class="key-icon" alt="" src="assets/key0.svg">
@@ -66,13 +70,10 @@
 							In</a></div>
 				</div>
 			</div>
+			<img class="google-1-icon" alt="" src="assets/google-10.png" id="google1Image">
 		</div>
-		<img class="google-1-icon" alt="" src="assets/google-10.png" id="google1Image">
-
+		
 	</div>
-
-
-
 
 	<script>
 		var itemsContainer = document.getElementById("itemsContainer");

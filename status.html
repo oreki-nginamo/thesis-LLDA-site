@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./status.css" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="popup-styles/minor.css" />
+    <link rel="stylesheet" href="popup-styles/moderate.css" />
+    <link rel="stylesheet" href="popup-styles/massive.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
 
@@ -22,10 +26,7 @@
             <div class="home"><a href="home.html" style=" text-decoration:none; color: black; ">Home</a></div>
             <div class="status" id="statusText"><a href="status.html"
                     style=" text-decoration:none; color: black; 
-            text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 
-            -1px 0 0 rgba(0, 0, 0, 0.5),
-             0 -1px 0 rgba(0, 0, 0, 0.5);">
-             Status</a></div>
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5);">Status</a></div>
             <div class="status" id="repositoriesText"><a href="repo.html"
                     style=" text-decoration:none; color: black;">Repositories</a></div>
             <div class="status" id="reportText"><a href="report.html"
@@ -37,55 +38,56 @@
         <img class="updated-logo-v5-no-bilog-1" alt="" src="assets/updated-logo-v-5-no-bilog-10.png">
         <img class="llda-logo-2" alt="" src="assets/llda-logo-21.png">
     </div>
-    <!-- body content-->
-    <div class="lake-status">Lake Status</div>
-    <div class="algal-blooms">Algal Blooms</div>
-    <div class="rectangle-div-1">
-    </div>
-    <div class="rectangle-div-2">
-    </div>
-    <div class="rectangle-div-3">
-    </div>
-    <div class="water-quality">Water Quality</div>
-    <div class="fish-kills">Fish Kills</div>
 
-    <img class="laguna-lake-from-llda-2" alt="" src="assets/Laguna Lake from LLDA 2.png">
-    <img class="legend-4-icon" alt="" src="assets/Legend 4.svg" id="legend4Icon">
-    <img class="legend-5-icon" alt="" src="assets/Legend 5.svg" id="legend5Icon">
-    <img class="legend-6-icon" alt="" src="assets/Legend 6.svg" id="legend6Icon">
-    <img class="legend-7-icon" alt="" src="assets/Legend 7.svg" id="legend7Icon">
-    <img class="legend-8-icon" alt="" src="assets/Legend 8.svg" id="legend8Icon">
-    <img class="legend-9-icon" alt="" src="assets/Legend 9.svg" id="legend9Icon">
-    <div class="text-input" id="textInputContainer">
-        <div class="text-field">
-            <div class="wednesday-1st-january">Wednesday, 10th January</div>
-            <img class="chevron-up-icon" alt="" src="assets/chevron-up.svg">
+    <!-- body content-->
+    <div class="status-content">
+        <div class="lake-status">Lake Status</div>
+        <div class="algal-blooms">Algal Blooms</div>
+        <div class="rectangle-div-1">
         </div>
-    </div>
-    </div>
-    <div id="massiveContainer" class="popup-overlay" style="display:none">
-        <div class="massive">
-            <div class="sample-prescription-for-container">
-                <p class="sample-prescription-for">Sample Prescription For Massive Severity</p>
-                <p class="sample-prescription-for">Algal Blooms</p>
+        <div class="rectangle-div-2">
+        </div>
+        <div class="rectangle-div-3">
+        </div>
+        <div class="water-quality">Water Quality</div>
+        <div class="fish-kills">Fish Kills</div>
+
+        <img class="laguna-lake-from-llda-2" alt="" src="assets/Laguna Lake from LLDA 2.png">
+        <img class="legend-4-icon" alt="" src="assets/Legend 4.svg" id="legend4Icon">
+        <img class="legend-5-icon" alt="" src="assets/Legend 5.svg" id="legend5Icon">
+        <img class="legend-6-icon" alt="" src="assets/Legend 6.svg" id="legend6Icon">
+        <img class="legend-7-icon" alt="" src="assets/Legend 7.svg" id="legend7Icon">
+        <img class="legend-8-icon" alt="" src="assets/Legend 8.svg" id="legend8Icon">
+        <img class="legend-9-icon" alt="" src="assets/Legend 9.svg" id="legend9Icon">
+
+        <div id="moderateContainer" class="popup-overlay" style="display:none">
+            <div class="moderate">
+                <div class="moderate-container">
+                    <p class="moderate-prescription">Sample Prescription For Moderate Severity</p>
+                    <p class="moderate-prescription">Algal Blooms</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="minorContainer" class="popup-overlay" style="display:none">
-        <div class="minor">
-            <div class="sample-prescription-for-container2">
-                <p class="sample-prescription-for2">Sample Prescription For Minor Severity</p>
-                <p class="sample-prescription-for2">Algal Blooms</p>
+        <div id="massiveContainer" class="popup-overlay" style="display:none">
+            <div class="massive">
+                <div class="massive-container">
+                    <p class="massive-prescription">Sample Prescription For Massive Severity</p>
+                    <p class="massive-prescription">Algal Blooms</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="moderateContainer" class="popup-overlay" style="display:none">
-        <div class="moderate">
-            <div class="sample-prescription-for-container1">
-                <p class="sample-prescription-for1">Sample Prescription For Moderate Severity</p>
-                <p class="sample-prescription-for1">Algal Blooms</p>
+        <div id="minorContainer" class="popup-overlay" style="display:none">
+            <div class="minor">
+                <div class="minor-container">
+                    <p class="minor-prescription">Sample Prescription For Minor Severity</p>
+                    <p class="minor-prescription">Algal Blooms</p>
+                </div>
             </div>
         </div>
+
+
+
+        <!-- Calendar -->
         <div class="text-input" id="textInputContainer">
             <div class="text-field">
                 <div class="wednesday-1st-january">Wednesday, 10th January</div>
@@ -104,7 +106,7 @@
                         </div>
                         <div class="arrow-left">
                             <div class="component-3">
-                                <img class="icon" alt="" src="assets/icon.svg">
+                                <img class="icon" alt="" src="icon.svg">
                             </div>
                         </div>
                     </div>
@@ -264,11 +266,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
 
         <script>
             var homeText = document.getElementById("homeText");
@@ -427,6 +425,8 @@
                     popup.addEventListener("click", onClick);
                 });
             }
+
+            //calendar script
             var textInputContainer = document.getElementById("textInputContainer");
             if (textInputContainer) {
                 textInputContainer.addEventListener("click", function () {
@@ -448,29 +448,33 @@
                     };
                     popup.addEventListener("click", onClick);
                 });
-            }</script>
+            }
+
+        </script>
 
 </body>
+<!-- footer-->
 <footer>
-		<div class="footer">
-			<div class="items1">
-				<div class="research-proponents">Research Proponents</div>
-				<div class="marcus-henson-l">Marcus Henson L. Garcia</div>
-				<div class="john-wilson-d">John Wilson D. Lorin</div>
-				<div class="joshua-a-rancap">Joshua A. Rancap</div>
-			</div>
-			<div class="laguna-lake-development">Laguna Lake Development Authority</div>
-			<div class="social-icons">
-				<img class="buttons-icon" alt="" src="Buttons/fb.png">
+    <div class="footer">
+        <div class="items1">
+            <div class="research-proponents" style=" color: black; ">Research Proponents</div>
+            <div class="marcus-henson-l" style=" color: black; ">Marcus Henson L. Garcia</div>
+            <div class="john-wilson-d" style=" color: black; ">John Wilson D. Lorin</div>
+            <div class="joshua-a-rancap" style=" color: black; ">Joshua A. Rancap</div>
+        </div>
+        <div class="laguna-lake-development" style=" color: black; ">Laguna Lake Development Authority</div>
+        <div class="social-icons">
+            <img class="buttons-icon" alt="" src="Buttons/fb.png">
 
-				<img class="buttons-icon" alt="" src="Buttons/ig.png">
+            <img class="buttons-icon" alt="" src="Buttons/ig.png">
 
-				<img class="buttons-icon" alt="" src="Buttons/yt.png">
+            <img class="buttons-icon" alt="" src="Buttons/yt.png">
 
-			</div>
-			<div class="divider">
-			</div>
-			<div class="llda-all-rights">© 2024 LLDA. All Rights Reserved </div>
-		</div>
-	</footer>
+        </div>
+        <div class="divider">
+        </div>
+        <div class="llda-all-rights" style=" color: black; ">© 2024 LLDA. All Rights Reserved </div>
+    </div>
+</footer>
+
 </html>
