@@ -14,7 +14,7 @@
 
 .research-proponents {
   width: 212px;
-  position: absolute;
+  position: relative;
   margin: 0 !important;
   top: 1px;
   left: 0px;
@@ -28,9 +28,8 @@
 
 .marcus-henson-l {
   width: 212px;
-  position: absolute;
+  position: relative;
   margin: 0 !important;
-  top: 25px;
   left: 0px;
   line-height: 150%;
   font-weight: 500;
@@ -41,9 +40,8 @@
 
 .john-wilson-d {
   width: 212px;
-  position: absolute;
+  position: relative;
   margin: 0 !important;
-  top: 49px;
   left: 0px;
   line-height: 150%;
   font-weight: 500;
@@ -54,9 +52,8 @@
 
 .joshua-a-rancap {
   width: 212px;
-  position: absolute;
+  position: relative;
   margin: 0 !important;
-  top: 73px;
   left: 0px;
   line-height: 150%;
   font-weight: 500;
@@ -113,14 +110,13 @@
   left: 79.5px;
   border-top: 1px solid #e6e6e6;
   box-sizing: border-box;
-  width: 1281px;
-  height: 1px;
+  width: 100%;
 }
 
 .llda-all-rights {
   position: absolute;
   top: 52px;
-  left: 1260px;
+  left: calc(75%);
   font-size: 14px;
   line-height: 150%;
   font-weight: bold;
