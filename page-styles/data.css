@@ -1,0 +1,93 @@
+.field {
+  width: 327px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+}
+
+.data-repositories {
+  width: 271px;
+  position: absolute;
+  margin: 0 !important;
+  top: 24%;
+  left: 30%;
+  font-size: 32px;
+  line-height: 150%;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  z-index: 2;
+}
+
+.input-field-with-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.input-field-with-button form {
+  display: flex;
+  align-items: center;
+}
+
+.input-field-with-button input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.button-new {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1b7019;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-new:hover {
+  background-color: #0056b3;
+}
+
+.field1 {
+  align-self: stretch;
+  flex: 1;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 12px 16px;
+  position: relative;
+  color: #828282;
+}
+
+.multi-line-paragraph-input {
+  width: 954px;
+  margin: 0 !important;
+  position: absolute;
+  top: 316px;
+  left: calc(50% - 477px);
+  height: 468px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  z-index: 4;
+  font-size: 16px;
+}
