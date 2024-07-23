@@ -407,3 +407,299 @@
     height: 22px;
     z-index: 15;
 }
+.lake-status {
+    width: 200px;
+    position: absolute;
+    margin: 0 !important;
+    top: 300px;
+    left: 1250px;
+    font-size: 23px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: var(--body-text);
+    color: #000;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .algal-blooms {
+    width: 87px;
+    position: absolute;
+    margin: 0 !important;
+    top: 330px;
+    left: 1250px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: #000;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .fish-kills {
+    width: 60px;
+    position: absolute;
+    margin: 0 !important;
+    top: 355px;
+    left: 1250px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: #000;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .water-quality {
+    width: 91px;
+    position: absolute;
+    margin: 0 !important;
+    top: 381px;
+    left: 1250px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: #000;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .rectangle-div-1 {
+    width: 56px;
+    position: absolute;
+    margin: 0 !important;
+    top: 330px;
+    left: 1350px;
+    background-color: #00b41d;
+    height: 16px;
+  }
+  
+  .rectangle-div-2 {
+    width: 56px;
+    position: absolute;
+    margin: 0 !important;
+    top: 355px;
+    left: 1350px;
+    background-color: #d9d9d9;
+    height: 16px;
+  }
+  
+  .rectangle-div-3 {
+    width: 56px;
+    position: absolute;
+    margin: 0 !important;
+    top: 381px;
+    left: 1350px;
+    background-color: #d9d9d9;
+    height: 16px;
+  }
+
+  @media (max-width: 1680px) {
+    .legend-4-icon {
+        left: 825px;
+    }
+    
+    .legend-5-icon {
+        left: 882px;
+    }
+    
+    .legend-6-icon {
+        left: 760px;
+    }
+    
+    .legend-7-icon {
+        left: 980px;
+    }
+    
+    .legend-8-icon {
+        left: 755px;
+    }
+    
+    .legend-9-icon {
+        left: 865px;
+    }
+    .lake-status{
+        left: 1150px;
+    }
+    .algal-blooms {
+        left: 1150px;
+      }
+      
+      .fish-kills {
+        left: 1150px;
+      }
+      
+      .water-quality {
+        left: 1150px;
+      }
+      
+      .rectangle-div-1 {
+        left: 1250px;
+      }
+      
+      .rectangle-div-2 {
+        left: 1250px;
+      }
+      
+      .rectangle-div-3 {
+        left: 1250px;
+      }
+  }
+
+@media (max-width: 1600px) {
+    .legend-4-icon {
+        left: 785px;
+    }
+    
+    .legend-5-icon {
+        left: 842px;
+    }
+    
+    .legend-6-icon {
+        left: 720px;
+    }
+    
+    .legend-7-icon {
+        left: 940px;
+    }
+    
+    .legend-8-icon {
+        left: 715px;
+    }
+    
+    .legend-9-icon {
+        left: 826px;
+    }
+    .lake-status{
+        left: 1100px;
+    }
+    .algal-blooms {
+        left: 1100px;
+      }
+      
+      .fish-kills {
+        left: 1100px;
+      }
+      
+      .water-quality {
+        left: 1100px;
+      }
+      
+      .rectangle-div-1 {
+        left: 1200px;
+      }
+      
+      .rectangle-div-2 {
+        left: 1200px;
+      }
+      
+      .rectangle-div-3 {
+        left: 1200px;
+      }
+  }
+  @media (max-width: 1440px) {
+    .legend-4-icon {
+        left: 705px;
+    }
+    
+    .legend-5-icon {
+        left: 762px;
+    }
+    
+    .legend-6-icon {
+        left: 640px;
+    }
+    
+    .legend-7-icon {
+        left: 860px;
+    }
+    
+    .legend-8-icon {
+        left: 635px;
+    }
+    
+    .legend-9-icon {
+        left: 746px;
+    }
+    .lake-status{
+        left: 1050px;
+    }
+    .algal-blooms {
+        left: 1050px;
+      }
+      
+      .fish-kills {
+        left: 1050px;
+      }
+      
+      .water-quality {
+        left: 1050px;
+      }
+      
+      .rectangle-div-1 {
+        left: 1150px;
+      }
+      
+      .rectangle-div-2 {
+        left: 1150px;
+      }
+      
+      .rectangle-div-3 {
+        left: 1150px;
+      }
+  }
+
+  @media (max-width: 1400px) {
+    .legend-4-icon {
+        left: 685px;
+    }
+    
+    .legend-5-icon {
+        left: 742px;
+    }
+    
+    .legend-6-icon {
+        left: 620px;
+    }
+    
+    .legend-7-icon {
+        left: 840px;
+    }
+    
+    .legend-8-icon {
+        left: 615px;
+    }
+    
+    .legend-9-icon {
+        left: 726px;
+    }
+    .lake-status{
+        left: 1000px;
+    }
+    .algal-blooms {
+        left: 1000px;
+      }
+      
+      .fish-kills {
+        left: 1000px;
+      }
+      
+      .water-quality {
+        left: 1000px;
+      }
+      
+      .rectangle-div-1 {
+        left: 1100px;
+      }
+      
+      .rectangle-div-2 {
+        left: 1100px;
+      }
+      
+      .rectangle-div-3 {
+        left: 1100px;
+      }
+  }

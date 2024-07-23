@@ -91,3 +91,17 @@
   z-index: 4;
   font-size: 16px;
 }
+
+/* responsive styles*/
+@media (max-width: 1680px) {
+  .data-repositories {
+    top: 22%;
+    left: 29%;
+  } 
+}
+@media (max-width: 1440px) {
+  .data-repositories {
+    top: 21%;
+    left: 25%;
+  } 
+}

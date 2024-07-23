@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   height: 184px;
-  top: 900px;
+  top: 800px;
   background-color: #bfd28e;
   overflow: hidden;
   text-align: left;
@@ -120,4 +120,11 @@
   font-size: 14px;
   line-height: 150%;
   font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1680px) {
+ .footer{
+  top: 828px;
+ }
 }

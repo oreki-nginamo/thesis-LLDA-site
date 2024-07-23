@@ -10,7 +10,7 @@
   cursor: pointer;
   font-size: var(--small-text-size);
   color: #fff;
-  }
+}
 
 .items {
   position: absolute;
@@ -22,6 +22,7 @@
   justify-content: flex-end;
   cursor: pointer;
 }
+
 .updated-logo-v5-no-bilog-1 {
   position: absolute;
   top: 52px;
@@ -29,8 +30,8 @@
   width: 527px;
   height: 73px;
   object-fit: cover;
-  mix-blend-mode: normal;
 }
+
 .llda-logo-2 {
   position: absolute;
   top: 24px;
@@ -38,16 +39,18 @@
   width: 131px;
   height: 128px;
   object-fit: cover;
-  }
+}
+
 .bagong-pinas-1 {
   position: absolute;
   top: 19px;
-  left: 1178px;
+  left: calc(50% + 250px);
   width: 167.3px;
   height: 128px;
   object-fit: cover;
-  
+
 }
+
 .header-navigation {
   width: 100%;
   position: relative;
@@ -69,16 +72,18 @@
   width: 606.4px;
   height: 632.2px;
   object-fit: contain;
-  }
-  .legend {
+}
+
+.legend {
   position: absolute;
   top: 22px;
   left: 606.72px;
   line-height: 150%;
   font-weight: 500;
   color: black;
-  }
-  .laguna-lake-stations {
+}
+
+.laguna-lake-stations {
   position: absolute;
   top: 69px;
   left: 633.72px;
@@ -86,8 +91,9 @@
   line-height: 150%;
   font-weight: 500;
   color: black;
-  }
-  .tributary-rivers-stations {
+}
+
+.tributary-rivers-stations {
   position: absolute;
   top: 93px;
   left: 633.72px;
@@ -95,23 +101,26 @@
   line-height: 150%;
   font-weight: 500;
   color: black;
-  }
-  .legend-1-icon {
+}
+
+.legend-1-icon {
   position: absolute;
   top: 71px;
   left: 609.72px;
   width: 17px;
   height: 17px;
-  
-  }
-  .legend-2-icon {
+
+}
+
+.legend-2-icon {
   position: absolute;
   top: 95px;
   left: 609.72px;
   width: 17px;
   height: 17px;
-  }
-  .view-quarterly-report {
+}
+
+.view-quarterly-report {
   position: absolute;
   top: 0px;
   left: 180px;
@@ -120,8 +129,9 @@
   font-size: 25px;
   cursor: pointer;
   color: black;
-  }
-  .home-page-frame {
+}
+
+.home-page-frame {
   width: 798.7px;
   position: absolute;
   margin: 0 !important;
@@ -129,8 +139,9 @@
   left: calc(50% - 308px);
   height: 654.6px;
   z-index: 2;
-  }
-  .home-page {
+}
+
+.home-page {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -146,354 +157,95 @@
   font-size: var(--body-text-size);
   color: var(--color-black);
   font-family: var(--small-text);
+}
+
+.home {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.status {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.log-out {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.items {
+  width: 100%;
+  position: relative;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+  text-align: left;
+  font-size: var(--body-text-size);
+  color: var(--color-black);
+  font-family: var(--small-text);
+}
+
+
+/* responsive styles*/
+@media (max-width: 1440px) {
+  .updated-logo-v5-no-bilog-1 {
+    position: absolute;
+    top: 52px;
+    left: calc(50% - 300px);
+    width: 527px;
+    height: 73px;
+    object-fit: cover;
   }
-
-  .home {
-    position: relative;
-    line-height: 150%;
-    font-weight: 500;
-    }
-    .status {
-    position: relative;
-    line-height: 150%;
-    font-weight: 500;
-    cursor: pointer;
-    }
-    .log-out {
-    position: relative;
-    line-height: 150%;
-    font-weight: 500;
-    }
-    
-    .items {
-    width: 100%;
-    position: relative;
-    height: 52px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 28px;
-    text-align: left;
-    font-size: var(--body-text-size);
-    color: var(--color-black);
-    font-family: var(--small-text);
-    }
-
-
-.component-4-icon {
-  width: 24px;
-  position: relative;
-  height: 24px;
-  overflow: hidden;
-  flex-shrink: 0;
+  
+  .llda-logo-2 {
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 436px);
+    width: 131px;
+    height: 128px;
+    object-fit: cover;
+  }
+  .bagong-pinas-1{
+    position: absolute;
+    top: 24px;
+    left: calc(50% + 235px);
+    width: 131px;
+    height: 128px;
+    object-fit: cover;
+  }
 }
-.arrow-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-9xs);
+@media (max-width: 1400px) {
+  .updated-logo-v5-no-bilog-1 {
+    position: absolute;
+    top: 52px;
+    left: calc(50% - 315px);
+    width: 527px;
+    height: 73px;
+    object-fit: cover;
+  }
+  
+  .llda-logo-2 {
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 449px);
+    width: 131px;
+    height: 128px;
+    object-fit: cover;
+  }
+  .bagong-pinas-1{
+    position: absolute;
+    top: 24px;
+    left: calc(50% + 220px);
+    width: 131px;
+    height: 128px;
+    object-fit: cover;
+  }
 }
-.january-2023 {
-  flex: 1;
-  position: relative;
-  line-height: 32px;
-}
-.component-2 {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs);
-}
-.icon {
-  width: 6px;
-  position: relative;
-  height: 12px;
-}
-.component-3 {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 9px;
-}
-.header {
-  width: 384px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-5xs);
-}
-.mo {
-  align-self: stretch;
-  position: relative;
-  line-height: 32px;
-}
-.content-light-mode {
-  width: 48px;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs);
-  box-sizing: border-box;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-5xs);
-}
-.content-light-mode7 {
-  width: 48px;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs);
-  box-sizing: border-box;
-  color: var(--color-silver);
-}
-.content-light-mode9 {
-  width: 48px;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-whitesmoke-100);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs);
-  box-sizing: border-box;
-}
-.content-dark-mode {
-  width: 48px;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-mediumslateblue-100);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs);
-  box-sizing: border-box;
-  color: var(--color-white);
-}
-.content-light-mode25 {
-  width: 48px;
-  border-radius: var(--br-5xs);
-  background-color: #d0deff;
-  border: 2px solid var(--color-mediumslateblue-100);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs);
-  color: var(--color-mediumslateblue-100);
-}
-.i21 {
-  align-self: stretch;
-  position: relative;
-  line-height: 32px;
-  z-index: 0;
-}
-.content-light-mode-child {
-  width: 4px;
-  position: absolute;
-  margin: 0 !important;
-  top: 40px;
-  left: calc(50% - 2px);
-  border-radius: 50%;
-  background-color: var(--color-mediumslateblue-200);
-  height: 4px;
-  z-index: 1;
-}
-.content-light-mode27 {
-  width: 48px;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-whitesmoke-100);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs);
-  box-sizing: border-box;
-  position: relative;
-  gap: var(--gap-9xs);
-}
-.body-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-  color: var(--color-gray-100);
-}
-.container1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-  color: var(--color-silver);
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-}
-.cancel {
-  position: relative;
-  line-height: 32px;
-}
-.cta-button-light-mode {
-  flex: 1;
-  border-radius: var(--br-5xs);
-  background-color: #ddd;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs) var(--padding-base);
-}
-.cta-button-dark-mode {
-  flex: 1;
-  border-radius: var(--br-5xs);
-  background-color: var(--color-mediumslateblue-200);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: var(--padding-5xs) var(--padding-base);
-  color: var(--color-white);
-}
-.buttons {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-  color: #888;
-}
-.datepickers {
-  width: 470px;
-  position: relative;
-  border-radius: 16px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-whitesmoke-100);
-  box-sizing: border-box;
-  height: 493px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  gap: 20px;
-  max-width: 90%;
-  max-height: 90%;
-  overflow: auto;
-  text-align: center;
-  font-size: var(--font-size-xl);
-  color: var(--color-gray-100);
-  font-family: var(--font-arapey);
-}
-
-.lake-status {
-  width: 200px;
-  position: absolute;
-  margin: 0 !important;
-  top: 300px;
-  left: 1250px;
-  font-size: 23px;
-  line-height: 150%;
-  font-weight: 500;
-  font-family: var(--body-text);
-  color: #000;
-  text-align: left;
-  display: inline-block;
-}
-
-.algal-blooms {
-  width: 87px;
-  position: absolute;
-  margin: 0 !important;
-  top: 330px;
-  left: 1250px;
-  font-size: 14px;
-  line-height: 150%;
-  font-weight: 500;
-  font-family: var(--font-inter);
-  color: #000;
-  text-align: left;
-  display: inline-block;
-}
-
-.fish-kills {
-  width: 60px;
-  position: absolute;
-  margin: 0 !important;
-  top: 355px;
-  left: 1250px;
-  font-size: 14px;
-  line-height: 150%;
-  font-weight: 500;
-  font-family: var(--font-inter);
-  color: #000;
-  text-align: left;
-  display: inline-block;
-}
-
-.water-quality {
-  width: 91px;
-  position: absolute;
-  margin: 0 !important;
-  top: 381px;
-  left: 1250px;
-  font-size: 14px;
-  line-height: 150%;
-  font-weight: 500;
-  font-family: var(--font-inter);
-  color: #000;
-  text-align: left;
-  display: inline-block;
-}
-.rectangle-div-1 {
-  width: 56px;
-  position: absolute;
-  margin: 0 !important;
-  top: 330px;
-  left: 1350px;
-  background-color: #00b41d;
-  height: 16px;
-}
-.rectangle-div-2 {
-  width: 56px;
-  position: absolute;
-  margin: 0 !important;
-  top: 355px;
-  left: 1350px;
-  background-color: #d9d9d9;
-  height: 16px;
-}
-.rectangle-div-3 {
-  width: 56px;
-  position: absolute;
-  margin: 0 !important;
-  top: 381px;
-  left: 1350px;
-  background-color: #d9d9d9;
-  height: 16px;
-}
-
