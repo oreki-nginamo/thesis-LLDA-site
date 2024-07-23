@@ -1,15 +1,23 @@
-.footer {
-  width: 100%;
+.login-foot {
+  height: 18vh;
+  top: 5vh;
   position: relative;
   display: flex;
-  height: 184px;
-  top: 800px;
   background-color: #bfd28e;
   overflow: hidden;
-  text-align: left;
-  font-size: var(--small-text-size);
-  color: var(--color-black);
-  font-family: var(--small-text);
+}
+
+.foot{
+  height: 18vh;
+  top: 75vh;
+  position: relative;
+  display: flex;
+  background-color: #bfd28e;
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%;
 }
 
 .research-proponents {

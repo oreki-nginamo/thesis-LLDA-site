@@ -3,6 +3,7 @@
   width: 100%;
   background-color: var(--color-white);
   overflow: hidden;
+  flex: 1;
 }
 .login-here {
   position: relative;
