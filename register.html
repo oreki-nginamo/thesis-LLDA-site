@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="english">
 
 <head>
@@ -37,44 +37,82 @@
     <div>
       <!-- body content -->
       <div class="register-page-container">
-        <div class="register-page-register-page">
-          <div class="register-page-loginframe">
-            <span class="register-page-text02">
-              <span class="register-page-text03">Already a user?</span>
-              <span><a href="login.html" style=" text-decoration:none; color:#1b7019; font-weight: bold;">Login
-                  Here</a></span>
-            </span>
-            <span class="register-page-text05"><span>Register Via:</span></span>
-            <span class="register-page-text07"><span>Register Here</span></span>
-            <div class="register-page-input-fields">
-              <div class="register-page-key">
-                <img alt="key1512" src="assets/key0.svg" class="register-page-key1" />
+          <div class="register-page-register-page">
+              <div class="register-page-loginframe">
+                  <span class="register-page-text02">
+                      <span class="register-page-text03">Already a user?</span>
+                      <span>
+                          <a href="login.html" style=" text-decoration:none; color:#1b7019; font-weight: bold;">
+                              Login
+                              Here
+                          </a>
+                      </span>
+                  </span>
+                  <span class="register-page-text05"><span>Register Via:</span></span>
+                  <div id="g_id_onload"
+                       data-client_id="559225362339-dfnbc9trnkvn7hkm172gml9l6a9squ8i.apps.googleusercontent.com"
+                       data-callback="handleCredentialResponse">
+                  </div>
+                  <div class="g_id_signin"
+                       data-type="standard"></div>
+                  <span class="register-page-text07"><span>Register Here</span></span>
+                  <div class="register-page-input-fields">
+                      <div class="register-page-key">
+                          <img alt="key1512" src="assets/key0.svg" class="register-page-key1" />
+                      </div>
+
+                      <form action="register.php" method="post" id="registerForm">
+                          <input type="text" name="username" placeholder="Username" class="register-page-frame01-username-input-field" />
+                          <input type="email" name="email" placeholder="Email" class="register-page-frame01-email-input-field" />
+                          <input type="password" name="password" placeholder="Password" class="register-page-frame01-password-input-field" />
+                          <input type="password" name="confirm_password" placeholder="Confirm Password" class="register-page-frame02-password-input-field" />
+
+                      </form>
+                      <div class="register-page-alternateemail">
+                          <img alt="alternateemail1523" src="assets/alternate_email.svg" class="register-page-alternateemail1" />
+                      </div>
+                      <div class="register-page-key2">
+                          <img alt="key1526" src="assets/key0.svg" class="register-page-key3" />
+                      </div>
+                      <div class="register-page-person">
+                          <img alt="person1529" src="assets/person0.svg" class="person-icon" />
+                      </div>
+                  </div>
+                  <div class="register-page-items">
+                      <button class="register-page-button1" id="customRegisterButton">
+                          <span class="register-page-text09 Smalltext">
+                              <span><a href="javascript:void(0);" style="text-decoration:none; color: white;">Register</a></span>
+                          </span>
+                      </button>
+                  </div>
+                  <script>
+                      document.getElementById('customRegisterButton').onclick = function () {
+
+                          document.getElementById('registerForm').submit();
+                      };
+                  </script>
               </div>
-              <input type="text" placeholder="Username" class="register-page-frame01-username-input-field" />
-              <input type="text" placeholder="Email" class="register-page-frame01-email-input-field" />
-              <input type="text" placeholder="Password" class="register-page-frame01-password-input-field" />
-              <input type="text" placeholder="Confirm Password" class="register-page-frame02-password-input-field" />
-              <div class="register-page-alternateemail">
-                <img alt="alternateemail1523" src="assets/alternate_email.svg" class="register-page-alternateemail1" />
-              </div>
-              <div class="register-page-key2">
-                <img alt="key1526" src="assets/key0.svg" class="register-page-key3" />
-              </div>
-              <div class="register-page-person">
-                <img alt="person1529" src="assets/person0.svg" class="person-icon" />
-              </div>
-            </div>
-            <div class="register-page-items">
-              <button class="register-page-button1">
-                <span class="register-page-text09 Smalltext">
-                  <span><a href="home.html" style=" text-decoration:none; color: white;">Register</a></span>
-                </span>
-              </button>
-            </div>
+              <img alt="google11533" src="assets/google-10.png" class="register-page-google1" />
+
+              <script src="https://accounts.google.com/gsi/client" async defer></script>
+              <script>
+                  function handleCredentialResponse(response) {
+                      // Send the response token to your server
+                      var xhr = new XMLHttpRequest();
+                      xhr.open('POST', 'google-login.php');
+                      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                      xhr.onload = function () {
+                          console.log('Signed in as: ' + xhr.responseText);
+                          if (xhr.responseText.indexOf('successful') !== -1) {
+                              window.location.href = 'home.html'; // Redirect after successful login
+                          } else {
+                              alert(xhr.responseText); // Display error message
+                          }
+                      };
+                      xhr.send('id_token=' + response.credential);
+                  }
+              </script>
           </div>
-        </div>
-        <img alt="google11533" src="assets/google-10.png" class="register-page-google1" />
-      </div>
     </div>
     <div class="foot">
       <!-- footer-->

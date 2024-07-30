@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -36,45 +36,83 @@
 
 		<div class="login-page">
 			<!-- body content-->
-			<div class="login-frame">
-				<div class="frame-background">
-				</div>
-				<div class="forgot-password"><a href="forgotpassword.html"
-						style=" text-decoration:none; color:#1b7019; font-weight: bold;">Forgot Password?</a></div>
-				<div class="not-a-user-container" id="notAUser" style=" text-decoration:none; color:#1b7019;">
-					<span>Not a user yet? </span>
-					<a href="register.html" style=" text-decoration:none; color: #1b7019;">
-						<b>Register Here</b>
-					</a>
-				</div>
-				<div class="login-via" style=" text-decoration:none; color: #1b7019;">Login Via:</div>
-				<div class="login-here">Login Here</div>
-				<div class="input-fields">
-					<div class="login-username-input-field">
-						<div class="label">Username</div>
-					</div>
-					<div class="login-password-input-field">
-						<div class="label">Password</div>
-					</div>
-					<img class="key-icon" alt="" src="assets/key0.svg">
+            <div class="login-frame">
+                <div class="frame-background">
+                </div>
+                <div class="forgot-password">
+                    <a href="forgotpassword.html"
+                       style=" text-decoration:none; color:#1b7019; font-weight: bold;">Forgot Password?</a>
+                </div>
+                <div class="not-a-user-container" id="notAUser" style=" text-decoration:none; color:#1b7019;">
+                    <span>Not a user yet? </span>
+                    <a href="register.html" style=" text-decoration:none; color: #1b7019;">
+                        <b>Register Here</b>
+                    </a>
+                </div>
+                <div class="login-via" style=" text-decoration:none; color: #1b7019;">Login Via:</div>
+                <!-- Google Sign-In Button -->
+                <div id="g_id_onload"
+                     data-client_id="559225362339-dfnbc9trnkvn7hkm172gml9l6a9squ8i.apps.googleusercontent.com"
+                     data-callback="handleCredentialResponse" class="google-1-icon">
+                </div>
+                <div class="g_id_signin"
+                     data-type="standard"> </div>
+                <div class="login-here">Login Here</div>
+                <div class="input-fields">
+                    <form action="login.php" method="post" id="loginForm">
+                        <input type="text" id="username" name="username" placeholder="Username" class="login-username-input-field" />
+                        <input type="password" id="password" name="password" placeholder="Password" class="login-password-input-field" />
 
-					<img class="person-icon" alt="" src="assets/person0.svg">
+                    </form>
+                    <img class="key-icon" alt="" src="assets/key0.svg">
 
-				</div>
-				<div class="check-box-outline-blank">
-					<div class="remember-me" style=" text-decoration:none; color:#1b7019;">Remember Me</div>
-					<img class="check-box-outline-blank-icon" alt="" src="assets/check-box-outline-blank1.svg">
+                    <img class="person-icon" alt="" src="assets/person0.svg">
 
-				</div>
-				<div class="items2" id="itemsContainer">
-					<div class="button">
-						<div class="register-here"><a href="home.html"
-								style=" text-decoration:none; color: #FFFFFF;">Log
-								In</a></div>
-					</div>
-				</div>
-				<img class="google-1-icon" alt="" src="assets/google-10.png" id="google1Image">
-			</div>
+                </div>
+                <div class="check-box-outline-blank">
+                    <div class="remember-me" style=" text-decoration:none; color:#1b7019;">Remember Me</div>
+                    <img class="check-box-outline-blank-icon" alt="" src="assets/check-box-outline-blank1.svg">
+
+                </div>
+
+                <div class="items2" id="itemsContainer">
+                    <div class="button">
+                        <div class="register-here" id="customLoginButton"> Log In </div>
+                    </div>
+                </div>
+
+                <img class="google-1-icon" alt="" src="assets/google-10.png" id="google1Image">
+
+                <script>
+                    document.getElementById('customLoginButton').onclick = function () {
+                        document.getElementById('loginForm').submit();
+                    };
+                </script>
+
+                <img class="google-1-icon" alt="" src="assets/google-10.png" id="google1Image">
+
+
+                <script src="https://accounts.google.com/gsi/client" async defer></script>
+                <script>
+                    function handleCredentialResponse(response) {
+                        // Send the response token to your server
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('POST', 'google-login.php'); // Ensure this matches your PHP file name
+                        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                        alert("Hello! I am an alert box!!");
+                        xhr.onload = function () {
+                            console.log('Signed in as: ' + xhr.responseText);
+                            if (xhr.responseText.indexOf('successful') !== -1) {
+                                window.location.href = 'home.html'; // Redirect after successful login
+                            } else {
+                                alert(xhr.responseText); // Display error message
+                            }
+                        };
+                        xhr.send('id_token=' + response.credential);
+                    }
+                </script>
+
+            </div>
 
 		</div>
 

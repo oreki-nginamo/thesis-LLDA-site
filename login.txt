@@ -1,0 +1,46 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "user_db";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT id, email, password FROM users WHERE username = ?";
+    
+    if ($stmt = $conn->prepare($sql)) {
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $stmt->store_result();
+
+        if ($stmt->num_rows > 0) {
+            $stmt->bind_result($id, $email, $hashed_password);
+            $stmt->fetch();
+
+            if (password_verify($password, $hashed_password)) {
+                echo "Login successful! Your email is $email";
+                // Here you can set session variables or redirect the user to another page
+            } else {
+                echo "Invalid username or password.";
+            }
+        } else {
+            echo "Invalid username or password.";
+        }
+        $stmt->close();
+    } else {
+        echo "Error: " . $conn->error;
+    }
+}
+
+$conn->close();
+?>
