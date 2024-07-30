@@ -53,10 +53,9 @@
                 <!-- Google Sign-In Button -->
                 <div id="g_id_onload"
                      data-client_id="559225362339-dfnbc9trnkvn7hkm172gml9l6a9squ8i.apps.googleusercontent.com"
-                     data-callback="handleCredentialResponse" class="google-1-icon">
+                     data-callback="handleCredentialResponse">
                 </div>
-                <div class="g_id_signin"
-                     data-type="standard"> </div>
+                <div class="g_id_signin" data-type="standard"> </div>
                 <div class="login-here">Login Here</div>
                 <div class="input-fields">
                     <form action="login.php" method="post" id="loginForm">
@@ -81,15 +80,13 @@
                     </div>
                 </div>
 
-                <img class="google-1-icon" alt="" src="assets/google-10.png" id="google1Image">
-
                 <script>
                     document.getElementById('customLoginButton').onclick = function () {
                         document.getElementById('loginForm').submit();
                     };
                 </script>
 
-                <img class="google-1-icon" alt="" src="assets/google-10.png" id="google1Image">
+                
 
 
                 <script src="https://accounts.google.com/gsi/client" async defer></script>
